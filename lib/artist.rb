@@ -27,7 +27,6 @@ class Artist
 
   def genres # iterates over that artist's songs and collects the genre of each song.
     songs.collect {|song| song.genre}
-
   end
 
 end
