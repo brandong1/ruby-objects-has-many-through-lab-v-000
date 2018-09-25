@@ -13,8 +13,8 @@ class Doctor
     @@all
   end
 
-  def new_appointment(date)
-
+  def new_appointment(patient, date)
+    Appointment.new(patient, self, date)
   end
 
   def appointments # iterates through all appointments and finds those belonging to this doctor.
