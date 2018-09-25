@@ -22,7 +22,7 @@ class Artist
   end
 
   def songs
-    @@all
+    Song.all.select {|song| song.artist == self}
   end
 
   def genres(genre) # iterates over that artist's songs and collects the genre of each song.
