@@ -19,9 +19,8 @@ class Artist
     Song.new(self, name, genre)
   end
 
-  def songs(song, genre)
+  def songs
     @@all
-
   end
 
   def genres(genre) # iterates over that artist's songs and collects the genre of each song.
